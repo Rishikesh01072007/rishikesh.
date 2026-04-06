@@ -4,46 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(135deg,#0f172a,#020617);
+      color:#e2e8f0;
     }
-    header {
-      background: #333;
-      color: white;
-      padding: 15px;
-      text-align: center;
+
+    header{
+      text-align:center;
+      padding:40px 20px;
+      background:linear-gradient(135deg,#1e293b,#020617);
+      box-shadow:0 5px 20px rgba(0,0,0,0.5);
     }
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #555;
+    header h1{font-size:36px}
+    header p{opacity:0.8}
+
+    nav{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      background:#020617;
+      padding:12px;
+      position:sticky;
+      top:0;
+      z-index:1000;
     }
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
+    nav a{
+      color:#e2e8f0;
+      text-decoration:none;
+      padding:8px 15px;
+      border-radius:8px;
+      transition:0.3s;
     }
-    nav a:hover {
-      background: #000;
+    nav a:hover{
+      background:#38bdf8;
+      color:#020617;
     }
-    section {
-      padding: 20px;
-      margin: 10px;
-      background: white;
-      border-radius: 8px;
+
+    .container{
+      max-width:1000px;
+      margin:auto;
+      padding:20px;
     }
-    .container {
-      max-width: 1000px;
-      margin: auto;
+
+    section{
+      margin:20px 0;
+      padding:25px;
+      background:#020617;
+      border-radius:16px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.5);
+      transition:0.3s;
     }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background: #333;
-      color: white;
+    section:hover{
+      transform:translateY(-5px);
+    }
+
+    h2{
+      margin-bottom:15px;
+      color:#38bdf8;
+    }
+
+    #projects ul{
+      list-style:none;
+    }
+    #projects li{
+      background:#1e293b;
+      margin:10px 0;
+      padding:12px;
+      border-radius:10px;
+    }
+
+    #certificates img{
+      width:280px;
+      margin:10px;
+      border-radius:12px;
+      transition:0.3s;
+      box-shadow:0 5px 15px rgba(0,0,0,0.4);
+    }
+    #certificates img:hover{
+      transform:scale(1.05);
+    }
+
+    #contact p{
+      margin:8px 0;
+    }
+
+    footer{
+      text-align:center;
+      padding:15px;
+      background:#020617;
+      margin-top:20px;
+      border-top:1px solid #1e293b;
     }
   </style>
 </head>
@@ -104,5 +158,3 @@ I am always eager to explore new technologies and continuously work on improving
 
 </body>
 </html>
-
- 
