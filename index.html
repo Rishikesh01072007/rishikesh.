@@ -1,160 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{
-      font-family:'Poppins',sans-serif;
-      background:linear-gradient(135deg,#0f172a,#020617);
-      color:#e2e8f0;
-    }
-
-    header{
-      text-align:center;
-      padding:40px 20px;
-      background:linear-gradient(135deg,#1e293b,#020617);
-      box-shadow:0 5px 20px rgba(0,0,0,0.5);
-    }
-    header h1{font-size:36px}
-    header p{opacity:0.8}
-
-    nav{
-      display:flex;
-      justify-content:center;
-      gap:20px;
-      background:#020617;
-      padding:12px;
-      position:sticky;
-      top:0;
-      z-index:1000;
-    }
-    nav a{
-      color:#e2e8f0;
-      text-decoration:none;
-      padding:8px 15px;
-      border-radius:8px;
-      transition:0.3s;
-    }
-    nav a:hover{
-      background:#38bdf8;
-      color:#020617;
-    }
-
-    .container{
-      max-width:1000px;
-      margin:auto;
-      padding:20px;
-    }
-
-    section{
-      margin:20px 0;
-      padding:25px;
-      background:#020617;
-      border-radius:16px;
-      box-shadow:0 10px 30px rgba(0,0,0,0.5);
-      transition:0.3s;
-    }
-    section:hover{
-      transform:translateY(-5px);
-    }
-
-    h2{
-      margin-bottom:15px;
-      color:#38bdf8;
-    }
-
-    #projects ul{
-      list-style:none;
-    }
-    #projects li{
-      background:#1e293b;
-      margin:10px 0;
-      padding:12px;
-      border-radius:10px;
-    }
-
-    #certificates img{
-      width:280px;
-      margin:10px;
-      border-radius:12px;
-      transition:0.3s;
-      box-shadow:0 5px 15px rgba(0,0,0,0.4);
-    }
-    #certificates img:hover{
-      transform:scale(1.05);
-    }
-
-    #contact p{
-      margin:8px 0;
-    }
-
-    footer{
-      text-align:center;
-      padding:15px;
-      background:#020617;
-      margin-top:20px;
-      border-top:1px solid #1e293b;
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>My Digital Portfolio</h1>
-  <p>Engineering Student</p>
-</header>
-
-<nav>
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#certificates">Certificates</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<div class="container">
-
-<section id="about">
-  <h2>About Me</h2>
-  <p>Hello! I am Rishikesh Pawar, an engineering student with a strong interest in technology and software development. I am passionate about learning new skills, especially in areas like programming, artificial intelligence, and data analysis. I enjoy building practical projects such as smart systems and data-based applications, which help me improve my problem-solving abilities.
-
-I am always eager to explore new technologies and continuously work on improving my technical knowledge. My goal is to become a skilled developer and contribute to innovative and impactful solutions in the future.
- </p>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <ul>
-    <li>AI Parking System</li>
-    <li>Air Quality Monitoring System</li>
-    <li>Student Marks Dataset Analysis</li>
-  </ul>
-</section>
-
-<section id="certificates">
-  <h2>Certificates & Achievements</h2>
-  <img src="WhatsApp%20Image%202026-04-06%20at%202.53.08%20PM.jpeg">
-  <img src="https://raw.githubusercontent.com/Rishikesh01072007/rishikesh./main/WhatsApp%20Image%202026-04-06%20at%203.37.17%20PM.jpeg" width="300">
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: rishikeshpawar01072007@email.com</p>
-  <p>GitHub: https://github.com/rishikesh.</p>
-</section>
-
-</div>
-
-<footer>
-  <p>© 2026 Rishikesh Pawar | Portfolio</p>
-</footer>
-
-<script>
-  console.log("Portfolio Loaded");
-</script>
-
-</body>
-</html>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fancy Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+html{scroll-behavior:smooth}
+body{background:#020617;color:#fff;overflow-x:hidden}
+nav{
+  position:fixed;top:0;left:0;width:100%;z-index:1000;
+  display:flex;justify-content:center;gap:18px;padding:16px;
+  backdrop-filter:blur(12px);background:rgba(2,6,23,.65);
+}
+nav a{
+  color:#e2e8f0;text-decoration:none;padding:10px 18px;border-radius:999px;
+  transition:.3s;font-size:14px
+}
+nav a:hover{background:#38bdf8;color:#020617}
+.slide{
+  min-height:100vh;padding:100px 8% 60px;
+  display:flex;align-items:center;justify-content:center;
+}
+.card{
+  width:min(1100px,100%);
+  background:rgba(15,23,42,.75);
+  border:1px solid rgba(56,189,248,.2);
+  backdrop-filter:blur(16px);
+  border-radius:28px;
+  padding:40px;
+  box-shadow:0 20px 50px rgba(0,0,0,.35);
+  animation:fadeUp .8s ease;
+}
+.hero{
+  text-align:center;
+  background:radial-gradient(circle at top right,#38bdf833,transparent 35%),
+             radial-gradient(circle at bottom left,#8b5cf633,transparent 30%);
+}
+.hero h1{font-size:clamp(2.5rem,6vw,4.5rem);margin-bottom:10px}
+.hero p{font-size:1.15rem;color:#cbd5e1;max-width:700px;margin:auto}
+.badge{display:inline-block;background:#38bdf8;color:#020617;padding:8px 16px;border-radius:999px;font-weight:600;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
